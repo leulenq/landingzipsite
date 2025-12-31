@@ -1,0 +1,11 @@
+{
+  "name": "pholio-experience",
+  "version": "1.0.0",
+  "description": "Immersive Pholio landing experience served via Node",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["pholio", "landing", "experience"],
+  "license": "MIT"
+}
