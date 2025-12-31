@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pholio System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-noise"></div>
+  <header class="top-nav">
+    <div class="logo">Pholio</div>
+    <div class="nav-grid">
+      <button class="chip">System</button>
+      <button class="chip">Casting</button>
+      <button class="chip">Agencies</button>
+      <button class="chip gold">Enter</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Infrastructure for modeling — composed live.</p>
+          <h1>Pholio introduces authority and rhythm to the chaos of talent.</h1>
+          <p class="lede">Every surface is recalculated in real time. Feeds align, comp cards standardize, casting signals resolve. You are inside the operating system of the industry.</p>
+          <div class="cta-row">
+            <button class="cta primary">Initialize Trial Access</button>
+            <button class="cta ghost">Watch the system compute</button>
+          </div>
+          <div class="meta-row">
+            <span class="meta">Verification lattice: active</span>
+            <span class="meta">Signal density: 87%</span>
+            <span class="meta">Alignment window: 12s</span>
+          </div>
+        </div>
+        <div class="hero-stack">
+          <div class="hero-card" data-depth="0.2">
+            <div class="card-header">
+              <span>Live Casting Feed</span>
+              <span class="pill">42 active</span>
+            </div>
+            <div class="feed">
+              <div class="feed-row">
+                <span class="tag">Paris</span>
+                <span>Maison Seraph FW · 18:00</span>
+                <span class="pulse"></span>
+              </div>
+              <div class="feed-row">
+                <span class="tag">NYC</span>
+                <span>Editorial Capsule · immediate</span>
+                <span class="pulse"></span>
+              </div>
+              <div class="feed-row">
+                <span class="tag">Seoul</span>
+                <span>Luxury Techno · shortlist</span>
+                <span class="pulse"></span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card" data-depth="0.35">
+            <div class="card-header">
+              <span>Standardized Comp Cards</span>
+              <span class="pill gold">Calibrating</span>
+            </div>
+            <div class="comp-grid">
+              <div class="comp" data-tone="warm">
+                <span class="id">ID-2044</span>
+                <div class="comp-body">
+                  <p>Alia • 177cm • Paris</p>
+                  <p>Book: Precision, noir, fluid</p>
+                </div>
+              </div>
+              <div class="comp" data-tone="cool">
+                <span class="id">ID-3001</span>
+                <div class="comp-body">
+                  <p>Lena • 182cm • Berlin</p>
+                  <p>Book: Brutalist, minimal tech</p>
+                </div>
+              </div>
+              <div class="comp" data-tone="neutral">
+                <span class="id">ID-2887</span>
+                <div class="comp-body">
+                  <p>Rio • 180cm • Tokyo</p>
+                  <p>Book: Motion-first, kinetic</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card" data-depth="0.5">
+            <div class="card-header">
+              <span>Agency Console</span>
+              <span class="pill">Signal</span>
+            </div>
+            <div class="console">
+              <div class="line">Filtering 2.1M signals → 412 verified assets</div>
+              <div class="line">Aligning casting briefs with comp archetypes</div>
+              <div class="line">Resolving conflicts in agency preferences</div>
+              <div class="line">Authorizing premium access window</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="layered" id="feeds">
+      <div class="section-header">
+        <div class="title-block">
+          <p class="eyebrow">Casting feeds</p>
+          <h2>Chaos resolves into structured demand.</h2>
+        </div>
+        <div class="controls">
+          <button class="cta ghost" id="reflow">Reflow grid</button>
+          <button class="cta primary">Inject new briefs</button>
+        </div>
+      </div>
+      <div class="grid-spectrum" id="feedGrid">
+        <div class="spectrum-card">
+          <div class="card-top">
+            <span class="tag">Milan</span>
+            <span class="pill">Runway</span>
+          </div>
+          <div class="card-body">Sharp silhouettes, glassy skin, midnight palette.</div>
+          <div class="card-bottom">36 candidates · 5 verified</div>
+        </div>
+        <div class="spectrum-card">
+          <div class="card-top">
+            <span class="tag">London</span>
+            <span class="pill gold">Editorial</span>
+          </div>
+          <div class="card-body">Industrial romance; angular, cinematic frames.</div>
+          <div class="card-bottom">22 candidates · 8 verified</div>
+        </div>
+        <div class="spectrum-card">
+          <div class="card-top">
+            <span class="tag">Shanghai</span>
+            <span class="pill">Commercial</span>
+          </div>
+          <div class="card-body">Futurist clarity, luminous product emphasis.</div>
+          <div class="card-bottom">41 candidates · 12 verified</div>
+        </div>
+        <div class="spectrum-card">
+          <div class="card-top">
+            <span class="tag">Copenhagen</span>
+            <span class="pill">Editorial</span>
+          </div>
+          <div class="card-body">Neutral minimalism with sculptural poses.</div>
+          <div class="card-bottom">17 candidates · 6 verified</div>
+        </div>
+        <div class="spectrum-card">
+          <div class="card-top">
+            <span class="tag">LA</span>
+            <span class="pill gold">Campaign</span>
+          </div>
+          <div class="card-body">Sunset metals, luxe sport, kinetic camera.</div>
+          <div class="card-bottom">32 candidates · 9 verified</div>
+        </div>
+        <div class="spectrum-card">
+          <div class="card-top">
+            <span class="tag">Berlin</span>
+            <span class="pill">Lookbook</span>
+          </div>
+          <div class="card-body">Brutalist concrete, engineered lines, chrome.</div>
+          <div class="card-bottom">18 candidates · 3 verified</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="section-header">
+        <div class="title-block">
+          <p class="eyebrow">Portfolio river</p>
+          <h2>Identities glide through a computed river of proof.</h2>
+        </div>
+        <div class="controls">
+          <button class="cta ghost" id="scramble">Scatter</button>
+          <button class="cta primary" id="align">Resolve</button>
+        </div>
+      </div>
+      <div class="river" id="river">
+        <div class="river-card">
+          <div class="portrait warm"></div>
+          <div class="stats">
+            <h3>Amaya</h3>
+            <p>Precision walk · Glass runway · Verified stride</p>
+            <div class="meter"><span style="width: 82%"></span></div>
+          </div>
+        </div>
+        <div class="river-card">
+          <div class="portrait cool"></div>
+          <div class="stats">
+            <h3>Jules</h3>
+            <p>Editorial bone structure · Monochrome authority</p>
+            <div class="meter"><span style="width: 74%"></span></div>
+          </div>
+        </div>
+        <div class="river-card">
+          <div class="portrait neutral"></div>
+          <div class="stats">
+            <h3>Nia</h3>
+            <p>Filmic cadence · Velvet shadow · Soft steel</p>
+            <div class="meter"><span style="width: 66%"></span></div>
+          </div>
+        </div>
+        <div class="river-card">
+          <div class="portrait bold"></div>
+          <div class="stats">
+            <h3>Rafa</h3>
+            <p>Avant pulse · Metallic light · Kinetic limbs</p>
+            <div class="meter"><span style="width: 91%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stacked">
+      <div class="stack-copy">
+        <p class="eyebrow">Agency + talent lenses</p>
+        <h2>Surfaces split, synchronize, then lock.</h2>
+        <p>Switch between operator and talent modes. Each layer re-sorts, compresses, and expands to reveal authority without losing density.</p>
+        <div class="cta-row">
+          <button class="cta ghost" id="toggleMode">Toggle mode</button>
+          <button class="cta primary">Request signal boost</button>
+        </div>
+      </div>
+      <div class="stack-panels" id="panelStack">
+        <div class="panel agency">
+          <div class="panel-header">Agency Control</div>
+          <div class="panel-body">
+            <div class="list-row">Risk map recalibration <span class="pill">active</span></div>
+            <div class="list-row">Comp merge suggestions <span class="pill gold">priority</span></div>
+            <div class="list-row">Casting window <span class="pill">09:00 - 18:00</span></div>
+          </div>
+        </div>
+        <div class="panel talent">
+          <div class="panel-header">Talent Profile</div>
+          <div class="panel-body">
+            <div class="list-row">Identity lock <span class="pill">verified</span></div>
+            <div class="list-row">Gallery refresh <span class="pill gold">curating</span></div>
+            <div class="list-row">Access lane <span class="pill">priority</span></div>
+          </div>
+        </div>
+        <div class="panel pricing">
+          <div class="panel-header">Access States</div>
+          <div class="panel-body">
+            <div class="state">
+              <div>
+                <p class="state-title">Signal Entry</p>
+                <p class="state-copy">Audit and align 25 identities. Timed window.</p>
+              </div>
+              <button class="chip">Unlock</button>
+            </div>
+            <div class="state">
+              <div>
+                <p class="state-title">Authority</p>
+                <p class="state-copy">Full agency console, comp standardization, casting feed merge.</p>
+              </div>
+              <button class="chip gold">Hold</button>
+            </div>
+            <div class="state">
+              <div>
+                <p class="state-title">Sovereign</p>
+                <p class="state-copy">Private models, bespoke scoring, gated circuits.</p>
+              </div>
+              <button class="chip">Request</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signal">
+      <div class="section-header">
+        <div class="title-block">
+          <p class="eyebrow">System signals</p>
+          <h2>Verification lattice stays alive as you hover.</h2>
+        </div>
+        <div class="controls">
+          <button class="cta primary">Activate lattice</button>
+        </div>
+      </div>
+      <div class="lattice" id="lattice">
+        <div class="node">ID-203</div>
+        <div class="node">ID-911</div>
+        <div class="node">ID-441</div>
+        <div class="node">ID-812</div>
+        <div class="node">ID-344</div>
+        <div class="node">ID-119</div>
+      </div>
+    </section>
+
+    <section class="matrix">
+      <div class="matrix-left">
+        <p class="eyebrow">Identity structure</p>
+        <h2>Identity objects queue, get standardized, and lock into rank.</h2>
+        <p class="lede">Pholio renders a living matrix — comp cards, casting artifacts, and agency priorities compress into a precise order. Shuffle the noise, then enforce the structure.</p>
+        <div class="cta-row">
+          <button class="cta ghost" id="matrixScatter">Disrupt the matrix</button>
+          <button class="cta primary" id="matrixResolve">Enforce standard</button>
+        </div>
+        <div class="matrix-log" id="matrixLog">
+          <div class="log-line">Awaiting submissions · 12 raw drops</div>
+          <div class="log-line">Normalizing aspect ratios</div>
+          <div class="log-line">Scoring editorial gravity</div>
+          <div class="log-line">Locking agency overrides</div>
+        </div>
+      </div>
+      <div class="matrix-right" id="matrixGrid">
+        <div class="matrix-card" data-tone="gold">
+          <div class="badge">Authority</div>
+          <div class="name">ID-441</div>
+          <p>Bone-structure · Modern noir</p>
+          <span class="meter small"><span style="width: 82%"></span></span>
+        </div>
+        <div class="matrix-card" data-tone="charcoal">
+          <div class="badge">Editorial</div>
+          <div class="name">ID-119</div>
+          <p>Glass runway · Neutral steel</p>
+          <span class="meter small"><span style="width: 64%"></span></span>
+        </div>
+        <div class="matrix-card" data-tone="cream">
+          <div class="badge">Casting</div>
+          <div class="name">ID-203</div>
+          <p>Precision sport · Luminous skin</p>
+          <span class="meter small"><span style="width: 71%"></span></span>
+        </div>
+        <div class="matrix-card" data-tone="charcoal">
+          <div class="badge gold">Private</div>
+          <div class="name">ID-911</div>
+          <p>Avant pulse · Chrome angles</p>
+          <span class="meter small"><span style="width: 90%"></span></span>
+        </div>
+        <div class="matrix-card" data-tone="cream">
+          <div class="badge">Live</div>
+          <div class="name">ID-812</div>
+          <p>Editorial gravity · Silent strength</p>
+          <span class="meter small"><span style="width: 76%"></span></span>
+        </div>
+        <div class="matrix-card" data-tone="gold">
+          <div class="badge">Signal</div>
+          <div class="name">ID-344</div>
+          <p>Kinetic limbs · Blade focus</p>
+          <span class="meter small"><span style="width: 68%"></span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="access">
+      <div class="access-header">
+        <p class="eyebrow">Access cadence</p>
+        <h2>Pricing is permission. Access expands only when signal proves itself.</h2>
+      </div>
+      <div class="access-grid">
+        <div class="access-column">
+          <div class="access-card prime">
+            <div class="tag">Signal Entry</div>
+            <h3>Timed credentials</h3>
+            <p>Limited comp normalization and 25 identity locks. Expires on silence.</p>
+            <button class="chip">Unlock window</button>
+          </div>
+          <div class="access-card">
+            <div class="tag gold">Authority</div>
+            <h3>Agency-grade</h3>
+            <p>Merge casting feeds, auto-rank, enforce editorial standards across agencies.</p>
+            <button class="chip gold">Hold access</button>
+          </div>
+        </div>
+        <div class="access-column log">
+          <div class="ticker" id="accessTicker">
+            <div class="tick">13 agencies synced · 4 locks pending</div>
+            <div class="tick">Premium lane active · 2m remaining</div>
+            <div class="tick">Sovereign enclave invoked</div>
+          </div>
+          <div class="access-console">
+            <p class="eyebrow">Authority console</p>
+            <div class="console-rows" id="consoleRows">
+              <div class="console-row">Weighting editorial gravity</div>
+              <div class="console-row">Reconciling comp lineage</div>
+              <div class="console-row">Locking roster privileges</div>
+            </div>
+            <div class="cta-row">
+              <button class="cta primary" id="cycleAccess">Cycle permissions</button>
+              <button class="cta ghost">Schedule gate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-block">
+      <div class="call">
+        <p class="eyebrow">Enter the operating layer</p>
+        <h2>Begin a 72-hour trial to feel the system compute with your roster.</h2>
+        <div class="cta-row">
+          <button class="cta primary">Initialize</button>
+          <button class="cta ghost">Schedule a live pass</button>
+        </div>
+      </div>
+      <div class="call cards">
+        <div class="mini-card">
+          <p>Signal proof</p>
+          <h3>Dynamic verification with agency-level weighting.</h3>
+        </div>
+        <div class="mini-card">
+          <p>Portfolio sync</p>
+          <h3>Live galleries regenerate with editorial cadence.</h3>
+        </div>
+        <div class="mini-card">
+          <p>Locked identity</p>
+          <h3>Authority seals that travel with talent across the network.</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="floating-lines"></div>
+  <script src="script.js"></script>
+</body>
+</html>
